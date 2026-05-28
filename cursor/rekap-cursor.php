@@ -98,7 +98,7 @@ $bonusTertinggi = mysqli_fetch_assoc($bonusTertinggiQuery);
         <button
             type="submit"
             name="generate_bonus"
-            class="bg-[#A855F7] hover:bg-[#9333EA] text-white px-6 py-3 rounded-xl shadow-sm transition duration-300"
+            class="bg-[#A855F7] hover:bg-[#9333EA] hover:scale-105 text-white px-6 py-3 rounded-xl shadow-sm transition duration-300"
         >
             Generate Rekap Cursor
         </button>
@@ -194,6 +194,20 @@ $bonusTertinggi = mysqli_fetch_assoc($bonusTertinggiQuery);
         </thead>
 
         <tbody>
+            <?php if (mysqli_num_rows($dataBonus) == 0) { ?>
+
+            <tr>
+
+                <td colspan="4" class="py-10 text-center text-gray-400">
+
+                    Belum ada data bonus seller
+
+                </td>
+
+            </tr>
+
+            <?php } ?>
+
             <?php while ($row = mysqli_fetch_assoc($dataBonus)) { ?>
 
             <tr class="border-b hover:bg-gray-50 transition duration-200">
@@ -219,6 +233,12 @@ $bonusTertinggi = mysqli_fetch_assoc($bonusTertinggiQuery);
     </div>
 
     </div>
+
+    <footer class="mt-12 text-center text-gray-400 text-sm">
+
+    Lazada-Lite © 2026 <br>
+
+    </footer>
 
     </main>
 

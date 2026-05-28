@@ -109,6 +109,11 @@ $produkTerlaris = mysqli_query($conn, "
             </div>
 
         </div>
+    <footer class="mt-12 text-center text-gray-400 text-sm">
+
+    Lazada-Lite © 2026 <br>
+
+    </footer>
 
     </main>
 
