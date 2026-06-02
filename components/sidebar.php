@@ -74,6 +74,18 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
         </li>
 
+        <li>
+
+            <a href="../views/stock & invoice.php"
+            class="flex items-center gap-3 px-5 py-4 rounded-2xl transition duration-300 font-medium
+            <?php echo ($currentPage == 'stock & invoice.php') ? 'bg-white/20 shadow-lg backdrop-blur-sm' : 'hover:bg-white/10'; ?>">
+
+                 Stock & Invoice
+
+            </a>
+
+        </li>
+
     </ul>
 
 </aside>
